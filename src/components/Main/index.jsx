@@ -16,7 +16,7 @@ const Main = (props) => {
     fetch(
       `${apiBaseUrl}/characters?${
         searchText ? `nameStartsWith=${searchText}&` : ""
-      }orderBy=-modified&apikey=${apiKey}`
+      }orderBy=-modified&apikey=8fb61ed0d8ae4cc76943c8d2b8e2ed9c`
     )
       .then((res) => res.json())
       .then((data) => {
