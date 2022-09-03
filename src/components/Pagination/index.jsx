@@ -3,7 +3,7 @@ import React from "react";
 
 const Pagination = (props) => {
   const { pageNumber, setPageNumber, totalPages } = props;
-  console.log(totalPages);
+
   const getLastPage = () => {
     if (pageNumber > 1) {
       setPageNumber(pageNumber - 1);

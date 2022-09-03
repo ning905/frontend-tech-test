@@ -18,4 +18,6 @@ const get = (url, query) =>
     },
   });
 
+console.log(get(instance.baseURL, query));
+
 export { instance as api, get };
