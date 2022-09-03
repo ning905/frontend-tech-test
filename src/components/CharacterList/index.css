@@ -1,0 +1,33 @@
+.character-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 3rem;
+}
+
+.character-item {
+  border: 5px solid #245be7;
+  border-radius: 0.3rem;
+  padding: 1.5rem;
+
+  display: flex;
+  gap: 1.5rem;
+}
+
+.character-item .character-img {
+  width: 200px;
+  height: 200px;
+}
+
+.character-item .text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.character-item .resource-list {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}

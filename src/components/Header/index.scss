@@ -1,3 +1,15 @@
 .header {
     background-color: lumx-color-variant('primary', 'N');
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.logo{
+    margin-left: 2rem;
+}
+
+.search-container {
+    display: inline-block;
+    margin-right: 2rem;
 }
