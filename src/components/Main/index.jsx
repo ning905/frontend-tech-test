@@ -14,11 +14,12 @@ const Main = (props) => {
 
   useEffect(() => {
     fetch(
-      `${apiBaseUrl}/characters?nameStartsWith=${searchText}&orderBy=-modified&apikey=${apiKey}`
+      `${apiBaseUrl}/characters?${
+        searchText ? `nameStartsWith=${searchText}&` : ""
+      }orderBy=-modified&apikey=${apiKey}`
     )
       .then((res) => res.json())
       .then((data) => {
-        // console.log(data.code);
         if (data.code === 200) {
           console.log(data.data.results);
           setCharacterList(data.data.results);
