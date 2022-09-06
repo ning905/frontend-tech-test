@@ -13,10 +13,9 @@ function App() {
     <>
       <Router>
         <Header searchText={searchText} setSearchText={setSearchText} />
-        <Main searchText={searchText} />
         <Switch>
           <Route exact path="/">
-            <section className="lumx-spacing-padding-horizontal-huge" />
+            <Main searchText={searchText} />
           </Route>
         </Switch>
       </Router>

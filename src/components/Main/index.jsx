@@ -23,6 +23,7 @@ const Main = (props) => {
         if (data.code === 200) {
           console.log(data.data.results);
           setCharacterList(data.data.results);
+          setPageNumber(1);
         }
       });
   }, [searchText]);

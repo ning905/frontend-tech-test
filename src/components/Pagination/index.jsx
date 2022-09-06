@@ -19,7 +19,7 @@ const Pagination = (props) => {
   return (
     <section
       className="pagination"
-      style={{ display: totalPages > 0 ? "flex" : "none" }}
+      style={{ display: totalPages > 1 ? "flex" : "none" }}
     >
       <button
         className={`pagination-btn ${pageNumber > 1 ? null : "disabled"}`}
